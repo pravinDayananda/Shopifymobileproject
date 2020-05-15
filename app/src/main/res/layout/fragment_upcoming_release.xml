@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ExperienceFragment"
+        android:background="#e6e6e6"
+        >
+
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#e05252"
+            android:fontFamily="sans-serif"
+            android:text="Upcoming Releases"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/product_image1"
+            android:layout_width="131dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo_transparent"
+            app:layout_constraintEnd_toStartOf="@+id/end_grid"
+
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/product_image3" />
+
+        <ImageView
+            android:id="@+id/product_image2"
+            android:layout_width="128dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/logo_transparent"
+            app:layout_constraintEnd_toEndOf="@id/end_grid"
+            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/product_image1" />
+
+        <ImageView
+            android:id="@+id/product_image3"
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logo_transparent"
+            app:layout_constraintEnd_toEndOf="@id/end_grid"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/header_text" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/Product_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center"
+
+            android:text="@string/HipHop_App"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/end_grid"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/header_text" />
+
+        <TextView
+            android:id="@+id/Product_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center"
+            android:text="@string/Apollo_App"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/end_grid"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/Product_text1" />
+
+        <TextView
+            android:id="@+id/Product_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:fontFamily="@font/armata"
+            android:gravity="center"
+            android:text="@string/Ruby_App"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/end_grid"
+            app:layout_constraintStart_toStartOf="@id/start_grid"
+            app:layout_constraintTop_toBottomOf="@+id/Product_text2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>

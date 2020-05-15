@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:paddingBottom="16dp"
+            tools:context=".HomeFragment">
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="4:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/matrix" />
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/armata"
+                android:scaleType="centerCrop"
+                android:text="@string/Main_header"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintTop_toBottomOf="@id/header_image"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/sub_title"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@id/header_text" />
+
+
+            <TextView
+                android:id="@+id/sub_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Featured Content(Skills) "
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@+id/sub_title" />
+
+
+            <ImageView
+                android:id="@+id/coding_icon"
+                android:layout_width="123dp"
+                android:layout_height="129dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="Coding"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintHorizontal_bias="0.071"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@id/sub_header"
+                app:srcCompat="@drawable/coding"
+                tools:srcCompat="@drawable/coding" />
+
+            <TextView
+                android:id="@+id/coding_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Coding "
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toStartOf="@+id/start_grid"
+                app:layout_constraintTop_toBottomOf="@+id/coding_icon" />
+
+            <ImageView
+                android:id="@+id/learning_icon"
+                android:layout_width="124dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@id/sub_header"
+                app:srcCompat="@drawable/leadership" />
+
+            <TextView
+                android:id="@+id/Leadership_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/armata"
+                android:text="Leadership"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/end_grid"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="@+id/start_grid"
+                app:layout_constraintTop_toBottomOf="@+id/learning_icon" />
+
+
+            <ImageView
+                android:id="@+id/problem_solving_icon"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@id/coding_text"
+                app:srcCompat="@drawable/solving" />
+
+
+            <TextView
+                android:id="@+id/problem_solving_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/armata"
+                android:gravity="center"
+                android:text="Problem Solving"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="@+id/start_grid"
+                app:layout_constraintTop_toBottomOf="@+id/problem_solving_icon" />
+
+            <ImageView
+                android:id="@+id/passion_icon"
+                android:layout_width="125dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@id/end_grid"
+                app:layout_constraintHorizontal_bias="0.866"
+                app:layout_constraintStart_toStartOf="@id/start_grid"
+                app:layout_constraintTop_toBottomOf="@id/Leadership_text"
+                app:srcCompat="@drawable/passion" />
+
+
+            <TextView
+                android:id="@+id/passion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/armata"
+                android:text="Passion"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/end_grid"
+                app:layout_constraintHorizontal_bias="0.791"
+                app:layout_constraintStart_toStartOf="@+id/start_grid"
+                app:layout_constraintTop_toBottomOf="@+id/passion_icon" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</layout>
+

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Pravin -ify</string>
+    <string name="title">Pravin -ify</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Main_header"> Coding new solutions, Engineered to last  </string>
+    <string name="sub_title">Combining passion with coding to bring forth new solutions to everyday problems</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Leader_Review"> The story of the origin of baby shark  \n \n
+        The first time i ever worked as camp leader,it was the craziest 5 minutes of my life. Kids yelling and asking me
+        questions about that i didn\'t know how to answer.There will days where it went run smoothly be on the water
+        kayaking or on belly boards but then there was days that you had to reach in your bags of tricks to adapt to
+        the changes.I learned over the years those challenging days helped me to become a better leader,team member and a person because only
+        when trapped in a thunderstorm ,some of your greatest idea will come about and change you for better \n
+    </string>
+    <string name="JrFrontend_Review">  Beauty is in the Eye of the Beholder \n \n
+        At my time at the AGO ,i had the opportunity to work withe the digital service team
+        who are responsible for maintaining and updating the website but also work with different exhibitions
+        to provide a new viewing experience which was cool seeing combining Art with technology.
+        I was also able to help the team to bring their app alive using React . Cool thing about working at the Ago
+        was being able to see how Tech can help bring the beauty of art in unique ways.
+    </string>
+    <string name="DeckSupervisor_Review">  Just Keep Swimming , Just Keep Swimming - Dory \n \n
+        Dory said it the best,always keep swimming.Working Aquatics you hear that phase where you go
+        from swimming my legs trying to become a lifeguard to saying it when i taught swimming lessons .
+        When working in Aquatics,it was all about working as a team and communicating to become stronger and
+        become a unit to solve problems or to overcome unexpected situations . We might be like little fishes in a pond
+        but together we are the strongest group of uniquefishes you will ever meet .
+    </string>
+
+        <string name="HipHop_App"> An App that will allow you to find your fav artist
+        and discovery their albums and tracks in a new way created by React Native
+            Release Date : TBH
+        </string>
+
+        <string name="Apollo_App"> An Android App that uses GraphQL to fetch  and list
+            some of your fav star wars characters by typing in their name in our client version
+            Release Date : June 2020
+        </string>
+        <string name="Ruby_App"> An Ruby by rails web App that will be our new edition that will
+            showcase our portfolio from  projects from the past til now
+            Release Date : June 2020
+        </string>
+
+
+    <string name="experience_rating">Experience Rating</string>
+    <string name="camps_header">Camps</string>
+</resources>

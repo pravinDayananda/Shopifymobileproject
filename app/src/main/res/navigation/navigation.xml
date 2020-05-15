@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pravin_ify.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_experienceFragment2"
+            app:destination="@id/experienceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_upcomingReleaseFragment"
+            app:destination="@id/upcomingReleaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AGOFragment"
+        android:name="com.example.pravin_ify.AGOFragment"
+        android:label="AGOFragment" />
+    <fragment
+        android:id="@+id/aquaticFragment"
+        android:name="com.example.pravin_ify.AquaticFragment"
+        android:label="AquaticFragment" />
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.example.pravin_ify.ExperienceFragment"
+        android:label="ExperienceFragment" >
+        <action
+            android:id="@+id/action_experienceFragment2_to_aquaticFragment"
+            app:destination="@id/aquaticFragment" />
+        <action
+            android:id="@+id/action_experienceFragment2_to_AGOFragment"
+            app:destination="@id/AGOFragment" />
+        <action
+            android:id="@+id/action_experienceFragment2_to_campFragment"
+            app:destination="@id/campFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/campFragment"
+        android:name="com.example.pravin_ify.CampFragment"
+        android:label="fragment_camp"
+        tools:layout="@layout/fragment_camp" />
+    <fragment
+        android:id="@+id/upcomingReleaseFragment"
+        android:name="com.example.pravin_ify.UpcomingReleaseFragment"
+        android:label="UpcomingReleaseFragment" />
+</navigation>
